@@ -68,8 +68,8 @@ const Navbar = () => {
           <div className="w-8 h-8">
             <img src={Bell} alt="bell" />
           </div>
-          <div className="w-12 h-12 ">
-            <img src={Profile} alt="Profile" className="w-8 h-8 rounded-full" />
+          <div className="w-12 h-12 -mt-1">
+            <img src={Profile} alt="Profile" className="w-10 h-10 rounded-full" />
           </div>
         </div>
       </div>

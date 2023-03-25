@@ -6,6 +6,11 @@ import Mic from './mic.svg';
 import Video from './video.svg';
 import Bell from './bell.svg';
 import Profile from './profile.jpg';
+import Dj from './dj.jpg';
+import ThumbUp from './thumb-up.svg';
+import ThumbDown from './thumb-down.svg';
+import Share from './share-arrows-svgrepo-com.svg';
+import Cut from './scissors.svg';
 
 export {
   Menu,
@@ -16,4 +21,9 @@ export {
   Video,
   Bell,
   Profile,
+  Dj,
+  ThumbDown,
+  ThumbUp,
+  Share,
+  Cut,
 };
