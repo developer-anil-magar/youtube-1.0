@@ -10,7 +10,7 @@ const VideoCard = ({ title, account, date, views, image }) => (
       <h3 className="text-gray-500 mt-3">{account}</h3>
       <div className="flex gap-3">
         <h3 className="text-gray-500">{views} views</h3>
-        <div className="w-[4px] h-[4px] rounded-full bg-gray-300 mt-[10px]" />
+        <div className="w-[4px] h-[4px] rounded-full bg-gray-500 mt-[10px]" />
         <h3 className="text-gray-500">{date} ago</h3>
       </div>
     </div>
