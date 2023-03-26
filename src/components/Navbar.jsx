@@ -18,8 +18,8 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="h-[75px] max-w-[1860px] mx-auto border-b">
-      <div className="flex justify-between">
+    <nav className="w-full fixed h-[75px] bg-white">
+      <div className="flex justify-between   w-full max-w-[1860px] mx-6">
         {/* menu and logo container */}
         <div className="flex">
           <div className="w-9 h-6 py-5">

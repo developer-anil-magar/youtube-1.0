@@ -6,9 +6,12 @@ const buttonStyle = {
 };
 
 const buttonSize = {
-  md: ' rounded-full w-32 h-12',
-  lg: 'rounded-full w-48 h-12',
-  smRound: 'rounded-full w-12 h-12',
+  md: 'w-32 ',
+  lg: 'w-48 ',
+  smRound: 'w-12  rounded-full',
+  xs: 'w-10 ',
+  xl: 'w-64 ',
+  sm: 'w-16 ',
 };
 
 const Button = ({
@@ -18,14 +21,15 @@ const Button = ({
   size = 'md',
   iconRight,
   round,
+  roundedFull,
 }) => {
   console.log('button');
   return (
     <button
       type="button"
-      className={`${buttonStyle[variant]} ${buttonSize[size]} flex items-center justify-center`}
+      className={`${buttonStyle[variant]} ${buttonSize[size]} ${roundedFull ? 'rounded-full' : 'rounded-xl'} flex items-center justify-center`}
     >
-      <div className={` ${iconRight ? 'border-r-2 border-gray-400 w-20' : ''} flex items-center `}>
+      <div className={` ${iconRight ? 'border-r-2 border-gray-400 w-20' : ''} flex items-center h-12`}>
         {iconLeft && (
         <img src={iconLeft} alt="right icon" className="h-7 w-7 mr-2" />
         )}

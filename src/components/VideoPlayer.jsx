@@ -41,18 +41,21 @@ const VideoPlayer = () => {
             iconRight={ThumbDown}
             variant="gray"
             size="lg"
+            roundedFull
           />
           <Button
             title="Share"
             iconLeft={Share}
             variant="gray"
             size="md"
+            roundedFull
           />
           <Button
             title="Clip"
             iconLeft={Cut}
             variant="gray"
             size="md"
+            roundedFull
           />
           <Button
             title="..."
