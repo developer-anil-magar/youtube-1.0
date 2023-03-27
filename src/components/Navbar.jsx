@@ -18,8 +18,8 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="w-full fixed h-[75px] bg-[#f6f7f9]">
-      <div className="flex justify-between   w-full max-w-[1860px] mx-6">
+    <nav className="w-full hidden lg:block fixed h-[75px] bg-[#f6f7f9]">
+      <div className="flex justify-between  max-w-[1860px] mx-6">
         {/* menu and logo container */}
         <div className="flex">
           <div className="w-9 h-6 py-5">
@@ -37,7 +37,7 @@ const Navbar = () => {
           <div className={`${isOpen ? 'block' : 'hidden'} h-[3rem] w-[5rem] border border-gray-300 mt-3 rounded-l-3xl bg-gray-100`}>
             <img src={Search} alt="search" className="h-[1.7rem] ml-6 mt-[10px]" style={{ filter: 'invert(19%) sepia(22%) saturate(448%) hue-rotate(164deg) brightness(93%) contrast(91%)' }} />
           </div>
-          <div className={`${!isOpen ? 'rounded-l-3xl' : ''} flex border-gray-300 border  w-[45rem] h-[3rem] mt-3`}>
+          <div className={`${!isOpen ? 'rounded-l-3xl' : ''} flex border-gray-300 border w-[25rem] xl:w-[45rem] h-[3rem] mt-3`}>
             <input
               ref={inputRef}
               type="text"
@@ -45,7 +45,7 @@ const Navbar = () => {
               placeholder="Search"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              className=" text-xl ml-2 focus:outline-0 bg-transparent h-10 my-[3px] w-[44rem]"
+              className=" text-xl ml-2 focus:outline-0 bg-transparent h-10 my-[3px] w-[24rem] xl:w-[44rem]"
               onClick={toggle}
             />
             <div className={`${input ? 'block ml-2' : 'hidden'} w-6 h-6 mt-3 border border-gray-300`}>

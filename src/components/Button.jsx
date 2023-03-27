@@ -6,12 +6,12 @@ const buttonStyle = {
 };
 
 const buttonSize = {
-  md: 'w-32 ',
-  lg: 'w-48 ',
-  smRound: 'w-12  rounded-full',
-  xs: 'w-10 ',
-  xl: 'w-64 ',
-  sm: 'w-16 ',
+  md: 'w-28 h-10',
+  lg: 'w-48 h-10',
+  smRound: 'w-10 h-10',
+  xs: 'w-10 h-10',
+  xl: 'w-64 h-10',
+  sm: 'w-16 h-10',
 };
 
 const Button = ({
@@ -29,15 +29,15 @@ const Button = ({
   >
     <div className={` ${iconRight ? 'border-r-2 border-gray-400 w-20' : ''} flex items-center h-12`}>
       {iconLeft && (
-        <img src={iconLeft} alt="right icon" className="h-7 w-7 mr-2" />
+        <img src={iconLeft} alt="right icon" className="h-[1.2rem] w-[1.2rem] mr-2" />
       )}
       {title && (
-        <h3 className={`${round ? '-mt-3 text-3xl font-bold' : ''}`}>{title}</h3>
+        <h3 className={`${round ? '-mt-4 text-sm md:text-3xl font-bold' : ''}`}>{title}</h3>
       )}
     </div>
 
     {iconRight && (
-    <img src={iconRight} alt="icon right" className="h-7 w-8 ml-7" />
+    <img src={iconRight} alt="icon right" className="h-[1rem] w-[1rem] ml-3 sm:ml-7" />
     )}
   </button>
 );

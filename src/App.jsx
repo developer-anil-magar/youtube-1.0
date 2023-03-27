@@ -6,13 +6,13 @@ import { videoDetails } from './constants/videoDetails';
 const App = () => (
   <>
     <Navbar />
-    <main className="max-w-[1720px] flex gap-8 mx-auto  py-28">
+    <main className="max-w-[400px] sm:max-w-[800px] lg:max-w-[1720px]  flex flex-col xl:flex-row gap-8 xl:gap-16 py-0 lg:py-28 mx-auto lg:mx-20 xl:mx-auto ">
       <VideoPlayer />
       <section>
-        <div className="border rounded-full w-[32rem] h-12 text-center">
+        <div className="hidden lg:block border rounded-full w-[32rem] h-12 text-center border-gray-300">
           <h2 className="font-medium mt-3">Show chat replay</h2>
         </div>
-        <div className="flex  gap-2 mt-8">
+        <div className="flex mx-2 lg:mx-0 gap-2  mt-2 lg:mt-8">
           <Button
             title="All"
             variant="black"
