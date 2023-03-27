@@ -27,7 +27,7 @@ const Button = ({
     type="button"
     className={`${buttonStyle[variant]} ${buttonSize[size]} ${roundedFull ? 'rounded-full' : 'rounded-xl'} flex items-center justify-center`}
   >
-    <div className={` ${iconRight ? 'border-r-2 border-gray-400 w-20' : ''} flex items-center h-12`}>
+    <div className={` ${iconRight ? 'border-r-2 border-gray-400 w-20 h-8' : ''} flex items-center h-12`}>
       {iconLeft && (
         <img src={iconLeft} alt="right icon" className="h-[1.2rem] w-[1.2rem] mr-2" />
       )}
