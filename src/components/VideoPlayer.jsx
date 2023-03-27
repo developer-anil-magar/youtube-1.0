@@ -6,7 +6,7 @@ import { Button, DescriptionBox } from '.';
 
 const VideoPlayer = () => (
   <section className="w-full xl:w-[65rem]">
-    <div className="w-full mx-auto  lg:mx-0 h-56 md:h-[30rem]">
+    <div className="w-full mx-auto  lg:mx-0 h-56 md:h-[30rem] xl:h-[32rem]">
       <ReactPlayer
         url="https://www.youtube.com/watch?v=dfeGh5boU3I"
         width="100%"
