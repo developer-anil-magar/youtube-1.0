@@ -5,8 +5,8 @@ import { Dj, ThumbDown, ThumbUp, Share, Cut } from '../assets';
 import { Button, DescriptionBox } from '.';
 
 const VideoPlayer = () => (
-  <section className="w-full lg:w-[60rem]">
-    <div className="w-full lg:w-[60rem]  mx-auto  lg:mx-0 h-56 md:h-[30rem]">
+  <section className="w-full xl:w-[65rem]">
+    <div className="w-full mx-auto  lg:mx-0 h-56 md:h-[30rem]">
       <ReactPlayer
         url="https://www.youtube.com/watch?v=dfeGh5boU3I"
         width="100%"
